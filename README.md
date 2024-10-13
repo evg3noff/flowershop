@@ -11,5 +11,5 @@
 ### Screenshots
 ![Скриншот index.html PC](mainPagePC.png)
 ![Скриншот index.html mobile (420px)](mainPageMobile.png)
-![Скриншот basket.html PC](BasketPagePC.png)
-![Скриншот basket.html Mobile](BasketPageMobile.png)
+![Скриншот basket.html PC](basketPagePC.png)
+![Скриншот basket.html Mobile](basketPageMobile.png)
