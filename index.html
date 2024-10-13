@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Flow story</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="flowers.css">
+        <link type="image/x-icon" href="image/favicon.svg" rel="shortcut icon">
+        <link type="Image/x-icon" href="image/favicon.svg" rel="icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="simple-adaptive-slider.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta content="true" name="HandheldFriendly" />
+        <meta content="width" name="MobileOptimized" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <script src="https://api-maps.yandex.ru/v3/?apikey=30a311dd-8d9d-432f-bf9e-f75e0121ae28&lang=ru_RU"></script>
+	</head>
+<body>
+    <div class="bg"> <!--начало шапки-->
+        <div class="main-content">
+            <img src="image/flowers.png" class="flowers">
+            <div class="wrapper-for-navigation">
+                <div class="media-icon-menu" id="open-navigation-btn">
+                    <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="25" height="2" rx="1" fill="#222222"/>
+                        <rect y="7" width="19" height="2" rx="1" fill="#222222"/>
+                        <rect y="14" width="23" height="2" rx="1" fill="#222222"/>
+                        </svg>                        
+                </div>
+                <div class="media-icon-menu" id="close-navigation-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="black"/>
+                        </svg>                                                
+                </div>
+                <ul id="navigation-menu" class="hide-media-mobile">
+                    <li >
+                        <a href="index.html" id="navigation"> Главная </a>
+                        <div id="underline"></div>
+                    </li>
+                    <li>
+                        <a href="katalog.html" id="navigation">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="basket.html" id="navigation">Доставка и оплата</a>
+                    </li>
+                </ul>
+                <img src="image/logo.png" class="logo">
+                <ul id="navigation-menu">
+                    <li class="navigation-li" style="display: none;">
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span> 
+                            <a href="#navigation1" id="navigation-search" class="hide-media-mobile"> Поиск </a>
+                    </li>
+                    <li class="navigation-li">
+                        <a  href="basket.html" id="navigation-bin" >
+                            <span class="icon" style="margin-top: 1px;"> 
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.6665 1.66666H2.75497C2.95999 1.66666 3.0625 1.66666 3.14499 1.70436C3.21769 1.73758 3.27929 1.79101 3.32246 1.85828C3.37145 1.93461 3.38595 2.03609 3.41494 2.23904L3.80936 4.99999M3.80936 4.99999L4.68594 11.4428C4.79718 12.2604 4.85279 12.6692 5.04825 12.9769C5.22049 13.2481 5.46741 13.4637 5.7593 13.5978C6.09056 13.75 6.50312 13.75 7.32826 13.75H14.4598C15.2453 13.75 15.638 13.75 15.959 13.6087C16.242 13.4841 16.4847 13.2832 16.6601 13.0285C16.8589 12.7397 16.9324 12.3539 17.0794 11.5823L18.1824 5.7914C18.2342 5.51983 18.26 5.38404 18.2225 5.27791C18.1897 5.1848 18.1248 5.10639 18.0395 5.05667C17.9422 4.99999 17.804 4.99999 17.5275 4.99999H3.80936ZM8.33317 17.5C8.33317 17.9602 7.96007 18.3333 7.49984 18.3333C7.0396 18.3333 6.6665 17.9602 6.6665 17.5C6.6665 17.0398 7.0396 16.6667 7.49984 16.6667C7.96007 16.6667 8.33317 17.0398 8.33317 17.5ZM14.9998 17.5C14.9998 17.9602 14.6267 18.3333 14.1665 18.3333C13.7063 18.3333 13.3332 17.9602 13.3332 17.5C13.3332 17.0398 13.7063 16.6667 14.1665 16.6667C14.6267 16.6667 14.9998 17.0398 14.9998 17.5Z" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                            </span>
+                        </a>
+                        <a href="basket.html" id="navigation-bin" class="hide-media-mobile">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-for-mobile-function-navigation" id="for-media-navigation">
+                <ul id="navigation-menu" class="mobile-function-navigation">
+                    <li >
+                        <a href="index.html" id="navigation"> Главная </a>
+                        <div id="underline"></div>
+                    </li>
+                    <li>
+                        <a href="katalog.html" id="navigation">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="basket.html" id="navigation">Доставка и оплата</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div> <!--конец шапки-->
+    </div>
+    <div class="bg"> <!--Начало Букета для любых случаев-->
+        <div class="main-content gap-wrapper">
+        <div class="button_info-wrapper">
+            <button id="go-in-katalog" class="setButton1">
+                <span class="btn-txt">
+                    <a href="katalog.html" id="navigation" style="color: #fff !important;">Перейти в каталог </a>
+                </span>
+            </button>
+            <div class="navigation-li">
+            <a class="main-txt" href="#about">Читать о нас</a>
+            <span class="icon">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5415 13.4583L13.4582 5.54166M13.4582 5.54166H5.5415M13.4582 5.54166V13.4583" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+            </span>
+            </div>
+        </div>
+        <div class="container-between">
+            <div class="wrapper-for-txt">
+                <div class="titleTxt">Букеты для любых случаев</div>
+                <div class="main-txt" style="text-align: start !important;">Оживите свой дом яркими красками природы - у нас цветы для всех случаев жизни! Розы, тюльпаны, ирисы, хризантемы, гортензии — всё это и многое другое вы найдёте в нашем магазине.</div>
+            </div>
+            <div class="wrapper-between">
+                <div class="wrapper-block-photo">
+                    <img class="flowerInfo1" src="image/flowersInfo1.png">
+                    <img class="flowerInfo2" src="image/flowersInfo2.png">
+                </div>
+                <button id="show-hits" class="setButton2">
+                    <a class="main-txt">
+                    Смотреть хиты
+                    </a>
+                    <span class="icon">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5415 13.4583L13.4582 5.54167M13.4582 5.54167H5.5415M13.4582 5.54167V13.4583" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                
+                    </span>
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="bg"> <!--Конец Букета для любых случаев-->
+        <div class="main-content"> <!--Начало хиты и новинки-->
+            <div class="wrapper-title2">
+                <h4 class="titleTxt2">
+                    Хиты и новинки
+                </h4>
+            </div>
+            <div class="slider-Carousel">
+                <div class="slider-Carousel-list">
+                    <div class="slider-Carousel-track">
+                        <div class="wrapper-for-block-flowers" id="slide1">
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCloud.png">
+                                </div>
+                                <span class="flowers-name">Облако</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 490 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCharm.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="new">НОВИНКА</div>
+                                    <img class="flower-photo" src="image/flowerCharm2.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerGoddess.png">
+                                </div>
+                                <span class="flowers-name">Goddest</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">3 290 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-for-block-flowers" id="slide1">
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCloud.png">
+                                </div>
+                                <span class="flowers-name">Облако</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 490 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCharm.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="new">НОВИНКА</div>
+                                    <img class="flower-photo" src="image/flowerCharm2.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerGoddess.png">
+                                </div>
+                                <span class="flowers-name">Goddest</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">3 290 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-for-block-flowers" id="slide1">
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCloud.png">
+                                </div>
+                                <span class="flowers-name">Облако</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 490 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCharm.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="new">НОВИНКА</div>
+                                    <img class="flower-photo" src="image/flowerCharm2.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerGoddess.png">
+                                </div>
+                                <span class="flowers-name">Goddest</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">3 290 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-for-block-flowers" id="slide1">
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCloud.png">
+                                </div>
+                                <span class="flowers-name">Облако</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 490 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCharm.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="new">НОВИНКА</div>
+                                    <img class="flower-photo" src="image/flowerCharm2.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerGoddess.png">
+                                </div>
+                                <span class="flowers-name">Goddest</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">3 290 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-for-block-flowers" id="slide1">
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCloud.png">
+                                </div>
+                                <span class="flowers-name">Облако</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 490 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerCharm.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="new">НОВИНКА</div>
+                                    <img class="flower-photo" src="image/flowerCharm2.png">
+                                </div>
+                                <span class="flowers-name">Очарование</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">2 890 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="wrapper-one-flower">
+                                <div class="wrapper-for-img-and-class">
+                                    <div class="hit">ХИТ</div>
+                                    <img class="flower-photo" src="image/flowerGoddess.png">
+                                </div>
+                                <span class="flowers-name">Goddest</span>
+                                <div class="space-between-container">
+                                    <span class="flowers-price">3 290 ₽</span>
+                                    <span class="wrapper-for-icons-basket">
+                                        <span class="icon" id="reducetobasket">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 12.998H5V10.998H19V12.998Z" fill="black"/>
+                                                </svg>                                                                    
+                                        </span>
+                                        <span class="icon" id="addtobasket">
+                                            <div class="countElipse">
+                                                <span class="countNumber">0</span>
+                                            </div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                 
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-for-slide-flowers">
+                <div class="wrapper-for-pagination">
+                    <div id="slide" class="current"></div>
+                    <div id="slide" class="page"></div>
+                    <div id="slide" class="page"></div>
+                    <div id="slide" class="page media-show-slide"></div>
+                    <div id="slide" class="page media-show-slide"></div>
+                </div>
+                <div class="wrapper-for-slide-arrow">
+                    <div class="circle prev" id="slideСarousel-left">
+                        <svg width="47" height="47" class="prev" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.4167 13.7082L17.625 23.4998L27.4167 33.2915" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                               
+                    </div>
+                    <div class="circle next" id="slideСarousel-right">
+                        <svg class="next" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5833 33.2918L29.375 23.5002L19.5833 13.7085" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--Конец хиты и новинки-->
+     <div class="bg">
+        <div class="main-content"> <!--начало каталог-->
+            <div class="wrapper-title2">
+                <h4 class="titleTxt2">
+                    Каталог
+                </h4>
+            </div>
+            <div class="container-for-type-flowers">
+                <div class="wrapper-for-duo-type-flowers">
+                    <div class="wrapper-one-type-flowers" id="author-set">
+                        <div class="wrapper-half-content">
+                            <h4 class="titleTxt2 type-flowers-txt">
+                                Авторские Букеты
+                            </h4>
+                            <div class="wrapper-for-look-and-icon">
+                                <a class="main-txt">Смотреть</a>
+                                <span class="icon">
+                                    <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#1E1E1E" />
+                                      </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="wrapper-half-content">
+                            <img class="kategory-img" src="image/autgor-kategory-img.png">
+                        </div>
+                    </div>
+                    <div class="wrapper-one-type-flowers" id="mono-set">
+                        <div class="wrapper-half-content">
+                            <h4 class="titleTxt2 type-flowers-txt">
+                                Монобукеты
+                            </h4>
+                            <div class="wrapper-for-look-and-icon">
+                                <a class="main-txt">Смотреть</a>
+                                <span class="icon">
+                                    <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#1E1E1E" />
+                                      </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="wrapper-half-content">
+                            <img class="kategory-img" src="image/mono-kategory-img.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-for-duo-type-flowers">
+                    <div class="wrapper-one-type-flowers" id="sets-in-box">
+                        <div class="wrapper-half-content">
+                            <h4 class="titleTxt2 type-flowers-txt">
+                                Букеты в коробках
+                            </h4>
+                            <div class="wrapper-for-look-and-icon">
+                                <a class="main-txt">Смотреть</a>
+                                <span class="icon">
+                                    <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#1E1E1E" />
+                                      </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="wrapper-half-content">
+                            <img class="kategory-img" src="image/sets-in-box-katalog.png">
+                        </div>
+                    </div>
+                    <div class="wrapper-one-type-flowers" id="balls-and-toys-set">
+                        <div class="wrapper-half-content">
+                            <h4 class="titleTxt2 type-flowers-txt">
+                                Шары и игрушки
+                            </h4>
+                            <div class="wrapper-for-look-and-icon">
+                                <a class="main-txt">Смотреть</a>
+                                <span class="icon">
+                                    <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#1E1E1E" />
+                                      </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="wrapper-half-content">
+                            <img class="kategory-img" src="image/balls-and-toys-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> <!--Конец Каталога-->
+     <div class="bg" id="about"> <!--начало о нас-->
+        <div class="main-content">
+            <div class="wrapper-title2">
+                <h4 class="titleTxt2">
+                    О нас
+                </h4>
+            </div>
+            <div class="wrapper-description-company">
+                <div class="wrap-for-description-text">
+                <span class="main-txt" style="text-align: left; color: black  !important;">
+                    C 1 ноября 2022 года начал работу наш цветочный магазин "Flow Story".
+                    <br><br>
+                </span>
+                <span class="main-txt" style="text-align: left; color: black  !important;">
+                    С нашими современными, утонченными и стильными композициями Вы можете начать свою историю, либо же красиво продолжать уже имеющуюся.
+                    <br><br>
+                </span>
+                <span class="main-txt" style="text-align: left; color: black  !important;">
+                    “Flow story” - это не просто доставка цветов Саратов, это интернет-магазин цветов и стильных букетов, где каждый найдет идеальный подарок для своих близких. Мы предлагаем широкий ассортимент свежесрезанных цветов, стильных композиций и уникальных подарков.
+                    <br><br>
+                </span>
+                <span class="main-txt" style="text-align: left; color: black  !important;">
+                    Сделайте заказ на сайте, и наши курьеры доставят ваш заказ в удобное для вас время. Мы заботимся о том, чтобы каждый клиент остался доволен своей покупкой и качеством обслуживания. Помните, что доставка цветов в Саратове не займет много времени.
+                    <br><br>
+                </span>
+                <span class="main-txt" style="text-align: left; color: black  !important;">
+                    Окунитесь в мир “Flow story”, и пусть наши цветы наполнят вашу жизнь яркими красками и незабываемыми впечатлениями!
+                </span>
+            </div>
+                </span>
+                <img src="image/description-company-img.png" class="description-company-img">
+            </div>
+            <div class="container-for-description-icon">
+                <div class="wrapper-description-icon">
+                    <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39 19.5V39L52 45.5M71.5 39C71.5 56.9493 56.9493 71.5 39 71.5C21.0507 71.5 6.5 56.9493 6.5 39C6.5 21.0507 21.0507 6.5 39 6.5C56.9493 6.5 71.5 21.0507 71.5 39Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="description-icon-text">
+                        Время доставки
+                    </span>
+                    <span class="main-txt">
+                        Наши услуги доставки<br>
+                        цветов доступны<br> 
+                        с 9:00 до 0:00
+                    </span>
+                </div>
+                <div class="wrapper-description-icon">
+                    <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39 55.25C39 64.2246 46.2754 71.5 55.25 71.5C64.2246 71.5 71.5 64.2246 71.5 55.25C71.5 46.2754 64.2246 39 55.25 39C46.2754 39 39 46.2754 39 55.25ZM39 55.25C39 51.5911 40.2093 48.2146 42.25 45.4984V16.25M39 55.25C39 57.9324 39.6499 60.463 40.8009 62.6929C38.0629 65.0057 31.739 66.625 24.375 66.625C14.5029 66.625 6.5 63.7149 6.5 60.125V16.25M42.25 16.25C42.25 19.8399 34.2471 22.75 24.375 22.75C14.5029 22.75 6.5 19.8399 6.5 16.25M42.25 16.25C42.25 12.6601 34.2471 9.75 24.375 9.75C14.5029 9.75 6.5 12.6601 6.5 16.25M6.5 45.5C6.5 49.0899 14.5029 52 24.375 52C31.4893 52 37.6328 50.4887 40.5101 48.3008M42.25 30.875C42.25 34.4649 34.2471 37.375 24.375 37.375C14.5029 37.375 6.5 34.4649 6.5 30.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    <span class="description-icon-text">
+                        Стоимость доставки
+                    </span>
+                    <span class="main-txt">
+                        Саратов: 250р, Энгельс - 700р.<br>
+                        Для заказов на сумму свыше 3000р<br>
+                        доставка бесплатная!
+                    </span>
+                </div>
+                <div class="wrapper-description-icon">
+                    <svg width="80" height="62" viewBox="0 0 80 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.56089 12.6134C24.2643 12.6132 53.112 8.48432 61.4872 22.9359C67.3032 23.1508 78.9354 25.3871 78.9354 32.6129C78.9354 35.1935 79.517 42.2903 77.1906 42.2903C75.3294 42.2903 28.3355 42.2903 5.07125 42.2903M29.4988 26.1613C44.0389 26.1613 55.9037 27.4149 56.8343 23.5806M31.2436 61H39.9677M42.8757 61H59.7423M1 21H18.4482M1.90804 1H9.46893M13.7954 1H32.4068" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.7573 43.1159C31.7573 47.3762 28.4308 50.7697 24.4001 50.7697C20.3695 50.7697 17.043 47.3762 17.043 43.1159C17.043 38.8556 20.3695 35.462 24.4001 35.462C28.4308 35.462 31.7573 38.8556 31.7573 43.1159Z" fill="white" stroke="black" stroke-width="2"/>
+                        <path d="M72.9858 43.1159C72.9858 47.3762 69.6593 50.7697 65.6286 50.7697C61.598 50.7697 58.2715 47.3762 58.2715 43.1159C58.2715 38.8556 61.598 35.462 65.6286 35.462C69.6593 35.462 72.9858 38.8556 72.9858 43.1159Z" fill="white" stroke="black" stroke-width="2"/>
+                    </svg>                                                
+                    <span class="description-icon-text">
+                        Самовывоз
+                    </span>
+                    <span class="main-txt">
+                        При выборе самовывоза на сайте,<br>
+                        вы сможете забрать свой заказ всего<br>
+                        за 30 минут<br>
+                    </span>
+                </div>
+                <div class="wrapper-description-icon">
+                    <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.25 37.3749L35.75 43.8749L50.375 29.2499M65 38.9999C65 54.9524 47.5996 66.5547 41.2685 70.2483C40.5489 70.6681 40.1892 70.878 39.6815 70.9868C39.2874 71.0713 38.7126 71.0713 38.3185 70.9868C37.8108 70.878 37.4511 70.6681 36.7315 70.2483C30.4004 66.5547 13 54.9524 13 38.9999V23.4572C13 20.8587 13 19.5595 13.425 18.4427C13.8004 17.4562 14.4104 16.5758 15.2024 15.8779C16.0989 15.0879 17.3153 14.6317 19.7483 13.7193L37.1742 7.18464C37.8498 6.93126 38.1876 6.80458 38.5352 6.75436C38.8435 6.70981 39.1565 6.70981 39.4648 6.75436C39.8124 6.80458 40.1502 6.93126 40.8258 7.18464L58.2517 13.7193C60.6847 14.6317 61.9011 15.0879 62.7976 15.8779C63.5896 16.5758 64.1996 17.4562 64.575 18.4427C65 19.5595 65 20.8587 65 23.4572V38.9999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                                
+                    <span class="description-icon-text">
+                        Конфиценциальность
+                    </span>
+                    <span class="main-txt">
+                        Курьер уведомляет получателя,<br>
+                        что букет был оплачен,сохраняя<br>
+                        конфиденциальность заказчика<br>
+                    </span>
+                </div>
+            </div>
+        </div>
+     </div> <!--конец о нас-->
+     <div class="bg"> <!--начало наши контакты-->
+        <div class="main-content">
+            <div class="wrapper-title2">
+                <h4 class="titleTxt2">
+                    Наши контакты
+                </h4>
+            </div>
+            <div class="wrapper-contacts">
+                <div class="one-column-wrapper-contacts">
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 10.7148C2.36148 11.3273 1.5 12.1809 1.5 13.125C1.5 14.989 4.85786 16.5 9 16.5C13.1421 16.5 16.5 14.989 16.5 13.125C16.5 12.1809 15.6385 11.3273 14.25 10.7148M13.5 6C13.5 9.04778 10.125 10.5 9 12.75C7.875 10.5 4.5 9.04778 4.5 6C4.5 3.51472 6.51472 1.5 9 1.5C11.4853 1.5 13.5 3.51472 13.5 6ZM9.75 6C9.75 6.41421 9.41421 6.75 9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25C9.41421 5.25 9.75 5.58579 9.75 6Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </span>
+                        <span class="main-txt"><a id="navigation" href="https://yandex.ru/maps/194/saratov/?ll=46.014736%2C51.606164&mode=poi&poi%5Bpoint%5D=46.014482%2C51.606273&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D101851678680&z=19.4">г. Саратов, проспект Героев Отечества, зд1</a></span>
+                    </div>
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5372 4.5C11.2698 4.64292 11.943 5.00119 12.4708 5.52895C12.9986 6.05671 13.3568 6.72995 13.4997 7.4625M10.5372 1.5C12.0592 1.66908 13.4784 2.35063 14.5619 3.43276C15.6454 4.51488 16.3288 5.93326 16.4997 7.455M7.66998 10.3973C6.7688 9.49612 6.05721 8.47714 5.53521 7.38992C5.49031 7.29641 5.46786 7.24965 5.45061 7.19048C5.38932 6.98021 5.43334 6.72202 5.56085 6.54395C5.59673 6.49384 5.6396 6.45097 5.72533 6.36524C5.98754 6.10303 6.11864 5.97193 6.20435 5.8401C6.5276 5.34293 6.5276 4.70199 6.20435 4.20482C6.11864 4.07299 5.98754 3.94189 5.72533 3.67968L5.57918 3.53353C5.1806 3.13495 4.98131 2.93566 4.76727 2.8274C4.3416 2.6121 3.8389 2.6121 3.41323 2.8274C3.1992 2.93566 2.99991 3.13495 2.60132 3.53353L2.4831 3.65176C2.08588 4.04897 1.88727 4.24758 1.73559 4.51761C1.56727 4.81724 1.44625 5.28261 1.44727 5.62627C1.44819 5.93598 1.50827 6.14765 1.62843 6.57098C2.27415 8.84603 3.49251 10.9928 5.28349 12.7838C7.07448 14.5748 9.22125 15.7931 11.4963 16.4389C11.9196 16.559 12.1313 16.6191 12.441 16.62C12.7847 16.621 13.25 16.5 13.5497 16.3317C13.8197 16.18 14.0183 15.9814 14.4155 15.5842L14.5337 15.466C14.9323 15.0674 15.1316 14.8681 15.2399 14.6541C15.4552 14.2284 15.4552 13.7257 15.2399 13.3C15.1316 13.086 14.9323 12.8867 14.5337 12.4881L14.3876 12.3419C14.1254 12.0797 13.9943 11.9486 13.8625 11.8629C13.3653 11.5397 12.7244 11.5397 12.2272 11.8629C12.0954 11.9486 11.9643 12.0797 11.702 12.3419C11.6163 12.4277 11.5734 12.4706 11.5233 12.5064C11.3453 12.6339 11.0871 12.678 10.8768 12.6167C10.8176 12.5994 10.7709 12.577 10.6774 12.5321C9.59014 12.0101 8.57116 11.2985 7.66998 10.3973Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                             
+                        </span>
+                        <span class="main-txt"><a id="navigation" href="tel:+7 (908) 546-46-66">+7 (908) 546-46-66</a></span>
+                    </div>
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.25L7.62369 9.53658C8.11957 9.8837 8.36751 10.0573 8.6372 10.1245C8.87542 10.1839 9.12458 10.1839 9.3628 10.1245C9.63249 10.0573 9.88043 9.8837 10.3763 9.53658L16.5 5.25M5.1 15H12.9C14.1601 15 14.7902 15 15.2715 14.7548C15.6948 14.539 16.039 14.1948 16.2548 13.7715C16.5 13.2902 16.5 12.6601 16.5 11.4V6.6C16.5 5.33988 16.5 4.70982 16.2548 4.22852C16.039 3.80516 15.6948 3.46095 15.2715 3.24524C14.7902 3 14.1601 3 12.9 3H5.1C3.83988 3 3.20982 3 2.72852 3.24524C2.30516 3.46095 1.96095 3.80516 1.74524 4.22852C1.5 4.70982 1.5 5.33988 1.5 6.6V11.4C1.5 12.6601 1.5 13.2902 1.74524 13.7715C1.96095 14.1948 2.30516 14.539 2.72852 14.7548C3.20982 15 3.83988 15 5.1 15Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                             
+                        </span>
+                        <span class="main-txt"><a id="navigation" href="mailto:infobiz64@yandex.ru">infobiz64@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="one-column-wrapper-contacts">
+                    <div class="wrapper-contact">
+                        <span class="main-txt">ИП Кобзев Богдан Викторович</span>
+                    </div>
+                    <div class="wrapper-contact">                                                          
+                        </span>
+                        <span class="main-txt">ИНН 644802921164</span>
+                    </div>
+                    <div class="wrapper-contact">                                                                                          
+                        </span>
+                        <span class="main-txt">ОГРНИП 321645100057906</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-link-map">
+                <a class="main-txt" href="https://yandex.ru/maps/194/saratov/?ll=46.015552%2C51.606572&mode=poi&poi%5Bpoint%5D=46.014482%2C51.606273&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D101851678680&z=17.76">Открыть карты</a>
+                <span class="icon">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5415 13.4583L13.4582 5.54166M13.4582 5.54166H5.5415M13.4582 5.54166V13.4583" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                    
+                </span>
+            </div>
+            <div id="map"></div>
+        </div>
+     </div> <!--конец наши контакты-->
+     <div class="bg">  <!--Начало "остались вопросы?"-->
+        <div class="main-content">
+            <div class="wrapper-title2">
+                <h4 class="titleTxt2 media-mobile">
+                    Остались вопросы? Напишите нам!
+                </h4>
+            </div>
+            <div class="wrapper-for-txt2">
+                <span class="main-txt" style="text-align: left; color: black;">Наша команда специалистов внимательно относится<br class="br1"> ко всем сообщениям клиентов</span>
+            </div>
+            <div class="container-for-inputs">
+                <form action="mail.php" method="POST">
+                    <div class="wrapper-column-inputs">
+                        <div class="wrapper-for-input">
+                            <span style=" text-align: left; color: black;" class="main-txt">Ваше имя<span class="main-txt" style="color: red;"> * </span><span class="main-txt err" id="errname" style="color: red;">Введите ваше имя</span></span>
+                            <input type="text" id="custom-input" name="user_name">
+                        </div>
+                        <div class="wrapper-for-input">
+                            <span style=" text-align: left; color: black;" class="main-txt">Электронная почта<span class="main-txt" style="color: red;"> * </span><span class="main-txt err" id="errmail" style="color: red;">Введите вашу почту</span></span>
+                            <input type="text" id="custom-input" name="user_email">
+                        </div>
+                        <div class="wrapper-for-input">
+                            <span style=" text-align: left; color: black;" class="main-txt">Номер телефона<span class="main-txt" style="color: red;"> * </span><span class="main-txt err" id="errphone" style="color: red;">Введите ваш номер телефона</span></span>
+                            <input type="tel" id="custom-input" name="user_phone">
+                        </div>
+                        <div class="wrapper-for-input">
+                            <span style=" text-align: left; color: black;" class="main-txt">Ваш вопрос<span class="main-txt" style="color: red;"> * </span><span class="main-txt err" id="errquestion" style="color: red;">Введите ваш вопрос</span></span>
+                            <input type="text" id="custom-input" name="user_question">
+                        </div>
+                        <div class="container-for-addFiles">
+                            <input type="file" name="file" id="input__file" placeholder="Прекрепить файл">
+                            <label for="input__file" class="input__file-button">
+                                <span class="main-txt input-file-text">Прекрепить файл</span>
+                                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="image/pin.svg" alt="Выбрать файл"></span>
+                            </label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="modern-checkbox">
+                            <label for="modern-checkbox"></label>
+                            <div class="wrapper-checkbox-txt">
+                            <span class="main-txt">Я даю согласие на обработку моих персональных данных в<br class="br1"> соответствии с <a style="text-decoration: underline;">политикой конфиденциальности</a></span>
+                            </div>
+                            
+                        </div>
+                        <span class="main-txt err" id="errcheck" style="color: red; text-align: left;">Необходимо принять пользовательское соглашение</span>
+                        <button id="send" type="submit"><span class="main-txt" style="color: #fff;">Отправить</span></button>
+                    </div>
+                </form>
+                <img class="ask-question" src="image/ask-question.png">
+            </div>
+        </div>
+    </div> <!--Конец "остались вопросы?"-->
+    <div class="bg-footer"> <!--Начало подвал-->
+            <div class="container-footer">
+                <div class="wrapper-column-footer1">
+                    <div class="wrapper-footer-title">
+                        <img class="footer-logo" src="image/logo.png" >
+                    </div>
+                    
+                    <div class="wrapper-footer-icon">
+                        <div class="wrapper-one-icon" style="display: none;">
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="#F9F9F9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                            </span> 
+                            <a href="#navigation1" class="main-txt-footer media-footer"> Поиск </a>
+                        </div>
+                        <div class="wrapper-one-icon">
+                            <a  href="basket.html" id="navigation-bin" >
+                                <span class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.6665 1.66675H2.75497C2.95999 1.66675 3.0625 1.66675 3.14499 1.70445C3.21769 1.73767 3.27929 1.7911 3.32246 1.85837C3.37145 1.9347 3.38595 2.03618 3.41494 2.23913L3.80936 5.00008M3.80936 5.00008L4.68594 11.4429C4.79718 12.2605 4.85279 12.6693 5.04825 12.977C5.22049 13.2482 5.46741 13.4638 5.7593 13.5979C6.09056 13.7501 6.50312 13.7501 7.32826 13.7501H14.4598C15.2453 13.7501 15.638 13.7501 15.959 13.6088C16.242 13.4842 16.4847 13.2833 16.6601 13.0286C16.8589 12.7398 16.9324 12.354 17.0794 11.5824L18.1824 5.79149C18.2342 5.51992 18.26 5.38414 18.2225 5.278C18.1897 5.18489 18.1248 5.10649 18.0395 5.05676C17.9422 5.00008 17.804 5.00008 17.5275 5.00008H3.80936ZM8.33317 17.5001C8.33317 17.9603 7.96007 18.3334 7.49984 18.3334C7.0396 18.3334 6.6665 17.9603 6.6665 17.5001C6.6665 17.0398 7.0396 16.6667 7.49984 16.6667C7.96007 16.6667 8.33317 17.0398 8.33317 17.5001ZM14.9998 17.5001C14.9998 17.9603 14.6267 18.3334 14.1665 18.3334C13.7063 18.3334 13.3332 17.9603 13.3332 17.5001C13.3332 17.0398 13.7063 16.6667 14.1665 16.6667C14.6267 16.6667 14.9998 17.0398 14.9998 17.5001Z" stroke="#F9F9F9" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                    
+                                    </span> 
+                            </a>
+                                <a href="basket.html" class="main-txt-footer media-footer"> Корзина </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="wrapper-column-footer">
+                    <div class="wrapper-footer-title">
+                       <span class="footer-title-txt">Меню</span>
+                    </div>
+                    <span class="main-txt-footer">
+                       <a href="index.html" id="navigation-footer"> Главная </a>
+                    </span>
+                    <span class="main-txt-footer">
+                    <a href="katalog.html" id="navigation-footer">Каталог</a>
+                    </span>
+                    <span class="main-txt-footer">
+                        <a href="basket.html" id="navigation-footer">Доставка и оплата</a>
+                        </span>
+                </div>
+                <div class="wrapper-column-footer">
+                    <div class="wrapper-footer-title">
+                       <span class="footer-title-txt">Контакты</span>
+                    </div>
+                    <div class="wrapper-contacts-footer">
+                        <div class="one-column-wrapper-contacts">
+                            <div class="wrapper-contact">
+                                <span class="icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 10.7148C2.36148 11.3273 1.5 12.1809 1.5 13.125C1.5 14.989 4.85786 16.5 9 16.5C13.1421 16.5 16.5 14.989 16.5 13.125C16.5 12.1809 15.6385 11.3273 14.25 10.7148M13.5 6C13.5 9.04778 10.125 10.5 9 12.75C7.875 10.5 4.5 9.04778 4.5 6C4.5 3.51472 6.51472 1.5 9 1.5C11.4853 1.5 13.5 3.51472 13.5 6ZM9.75 6C9.75 6.41421 9.41421 6.75 9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25C9.41421 5.25 9.75 5.58579 9.75 6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                        
+                                </span>
+                                <span class="main-txt-footer"><a id="navigation-footer" href="https://yandex.ru/maps/194/saratov/?ll=46.014736%2C51.606164&mode=poi&poi%5Bpoint%5D=46.014482%2C51.606273&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D101851678680&z=19.4">проспект Героев Отечества, зд1</a></span>
+                            </div>
+                            <div class="wrapper-contact">
+                                <span class="icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5372 4.5C11.2698 4.64292 11.943 5.00119 12.4708 5.52895C12.9986 6.05671 13.3568 6.72995 13.4997 7.4625M10.5372 1.5C12.0592 1.66908 13.4784 2.35063 14.5619 3.43276C15.6454 4.51488 16.3288 5.93326 16.4997 7.455M7.66998 10.3973C6.7688 9.49612 6.05721 8.47714 5.53521 7.38992C5.49031 7.29641 5.46786 7.24965 5.45061 7.19048C5.38932 6.98021 5.43334 6.72202 5.56085 6.54395C5.59673 6.49384 5.6396 6.45097 5.72533 6.36524C5.98754 6.10303 6.11864 5.97193 6.20435 5.8401C6.5276 5.34293 6.5276 4.70199 6.20435 4.20482C6.11864 4.07299 5.98754 3.94189 5.72533 3.67968L5.57918 3.53353C5.1806 3.13495 4.98131 2.93566 4.76727 2.8274C4.3416 2.6121 3.8389 2.6121 3.41323 2.8274C3.1992 2.93566 2.99991 3.13495 2.60132 3.53353L2.4831 3.65176C2.08588 4.04897 1.88727 4.24758 1.73559 4.51761C1.56727 4.81724 1.44625 5.28261 1.44727 5.62627C1.44819 5.93598 1.50827 6.14765 1.62843 6.57098C2.27415 8.84603 3.49251 10.9928 5.28349 12.7838C7.07448 14.5748 9.22125 15.7931 11.4963 16.4389C11.9196 16.559 12.1313 16.6191 12.441 16.62C12.7847 16.621 13.25 16.5 13.5497 16.3317C13.8197 16.18 14.0183 15.9814 14.4155 15.5842L14.5337 15.466C14.9323 15.0674 15.1316 14.8681 15.2399 14.6541C15.4552 14.2284 15.4552 13.7257 15.2399 13.3C15.1316 13.086 14.9323 12.8867 14.5337 12.4881L14.3876 12.3419C14.1254 12.0797 13.9943 11.9486 13.8625 11.8629C13.3653 11.5397 12.7244 11.5397 12.2272 11.8629C12.0954 11.9486 11.9643 12.0797 11.702 12.3419C11.6163 12.4277 11.5734 12.4706 11.5233 12.5064C11.3453 12.6339 11.0871 12.678 10.8768 12.6167C10.8176 12.5994 10.7709 12.577 10.6774 12.5321C9.59014 12.0101 8.57116 11.2985 7.66998 10.3973Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                     
+                                </span>
+                                <span class="main-txt-footer"><a id="navigation-footer" href="tel:+7 (908) 546-46-66">+7 (908) 546-46-66</a></span>
+                            </div>
+                            <div class="wrapper-contact">
+                                <span class="icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 5.25L7.62369 9.53658C8.11957 9.8837 8.36751 10.0573 8.6372 10.1245C8.87542 10.1839 9.12458 10.1839 9.3628 10.1245C9.63249 10.0573 9.88043 9.8837 10.3763 9.53658L16.5 5.25M5.1 15H12.9C14.1601 15 14.7902 15 15.2715 14.7548C15.6948 14.539 16.039 14.1948 16.2548 13.7715C16.5 13.2902 16.5 12.6601 16.5 11.4V6.6C16.5 5.33988 16.5 4.70982 16.2548 4.22852C16.039 3.80516 15.6948 3.46095 15.2715 3.24524C14.7902 3 14.1601 3 12.9 3H5.1C3.83988 3 3.20982 3 2.72852 3.24524C2.30516 3.46095 1.96095 3.80516 1.74524 4.22852C1.5 4.70982 1.5 5.33988 1.5 6.6V11.4C1.5 12.6601 1.5 13.2902 1.74524 13.7715C1.96095 14.1948 2.30516 14.539 2.72852 14.7548C3.20982 15 3.83988 15 5.1 15Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                                                                                                                     
+                                </span>
+                                <span class="main-txt-footer"><a id="navigation-footer" href="mailto:infobiz64@yandex.ru">infobiz64@yandex.ru</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-column-footer">
+                    <div class="wrapper-footer-title">
+                       <span class="footer-title-txt">Социальные сети</span>
+                    </div>
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="20" height="20" rx="10" stroke="white"/>
+                                <g clip-path="url(#clip0_188_150)">
+                                <path d="M9.31572 11.9582L9.13376 14.5176C9.39409 14.5176 9.50684 14.4057 9.64205 14.2714L10.8626 13.105L13.3917 14.9571C13.8555 15.2156 14.1823 15.0795 14.3074 14.5304L15.9675 6.75156L15.968 6.7511C16.1151 6.06543 15.72 5.79731 15.2681 5.96552L5.51018 9.70139C4.84422 9.95989 4.8543 10.3311 5.39697 10.4994L7.89168 11.2753L13.6864 7.64943C13.9591 7.46885 14.2071 7.56877 14.0031 7.74935L9.31572 11.9582Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_188_150">
+                                <rect width="11" height="11" fill="white" transform="translate(5 5)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>                                                                                                                                                                     
+                        </span>
+                        <span class="main-txt-footer"><a id="navigation-footer" href="">Телеграм</a></span>
+                    </div>
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.875 12.5C21.875 17.6777 17.6777 21.875 12.5 21.875C11.253 21.875 10.0628 21.6315 8.97447 21.1895C8.76617 21.1049 8.66202 21.0626 8.57783 21.0438C8.49548 21.0253 8.43453 21.0185 8.35014 21.0185C8.26386 21.0185 8.16988 21.0342 7.98193 21.0655L4.27579 21.6832C3.88769 21.7479 3.69364 21.7802 3.55332 21.72C3.4305 21.6674 3.33264 21.5695 3.27996 21.4467C3.21977 21.3064 3.25212 21.1123 3.3168 20.7242L3.93449 17.0181C3.96581 16.8301 3.98148 16.7361 3.98147 16.6499C3.98145 16.5655 3.9747 16.5045 3.95624 16.4222C3.93737 16.338 3.89508 16.2338 3.81048 16.0255C3.36848 14.9372 3.125 13.747 3.125 12.5C3.125 7.32233 7.32233 3.125 12.5 3.125C17.6777 3.125 21.875 7.32233 21.875 12.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.2501 13.3174C15.4616 13.4039 16.6347 13.9808 16.8751 14.0962C17.1155 14.2116 17.2597 14.2597 17.327 14.3655C17.3943 14.4712 17.3943 14.9424 17.1924 15.5001C17.0001 16.0578 16.0482 16.5674 15.5866 16.6347C15.1732 16.6924 14.6539 16.7212 14.0866 16.5385C13.7405 16.4328 13.2982 16.2885 12.7308 16.0385C10.3462 15.0097 8.77892 12.6058 8.66354 12.4424L8.66166 12.4399C8.53922 12.2767 7.69238 11.1478 7.69238 9.98084C7.69238 8.80777 8.30777 8.23084 8.51931 7.99046C8.74046 7.75008 8.99046 7.69238 9.15392 7.69238H9.61546C9.75969 7.702 9.96161 7.64431 10.1539 8.10584C10.3462 8.58661 10.827 9.75969 10.8847 9.87508C10.9424 9.99046 10.9808 10.1251 10.9039 10.2885C10.827 10.4424 10.7789 10.5482 10.6635 10.6828C10.5482 10.8174 10.4135 10.9905 10.3078 11.0962C10.1828 11.2212 10.0674 11.3462 10.202 11.5866C10.3462 11.827 10.8174 12.6058 11.5289 13.2405C12.4328 14.0482 13.202 14.3078 13.4424 14.4232C13.6828 14.5482 13.827 14.5289 13.9616 14.3655C14.0962 14.2116 14.5482 13.6732 14.7116 13.4328C14.8751 13.202 15.0289 13.2405 15.2501 13.3174Z" fill="white"/>
+                                </svg>                                                                                                                                                                                                     
+                        </span>
+                        <span class="main-txt-footer"><a id="navigation-footer" href="">Вотсап</a></span>
+                    </div>
+                    <div class="wrapper-contact">
+                        <span class="icon">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="20" height="20" rx="10" stroke="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1837 13.316C13.9857 13.1119 13.7817 12.9127 13.5721 12.7186L13.5702 12.7169C12.703 11.9463 12.2985 11.8125 12.0122 11.8125C11.8594 11.8125 11.6913 11.8278 11.5821 11.9539C11.5328 12.0141 11.5006 12.0845 11.4881 12.1589C11.4727 12.2454 11.4659 12.3329 11.4677 12.4205V13.6288C11.4677 13.7791 11.4408 13.8421 11.3654 13.8881C11.2651 13.9499 11.051 14 10.5915 14C9.71863 13.9453 8.87233 13.7003 8.12218 13.2853C7.37203 12.8703 6.73943 12.2971 6.2764 11.6128L6.27129 11.6051L6.2649 11.5981C5.15234 10.3215 4.37696 8.82396 4 7.22372C4.00256 7.14713 4.02045 7.10059 4.04985 7.07231C4.07988 7.04285 4.15338 7.00161 4.33999 7.00161H5.79709C5.95878 7.00161 6.04314 7.0346 6.10385 7.08468C6.1716 7.14241 6.23167 7.23962 6.30325 7.41283C6.66113 8.38255 7.14428 9.28983 7.6025 9.95673C7.83129 10.2896 8.05624 10.5671 8.25947 10.7633C8.36108 10.8611 8.46014 10.9424 8.55537 11.0001C8.64675 11.0555 8.75092 11.0997 8.85829 11.0997C8.91453 11.0997 8.98035 11.0938 9.04362 11.0684C9.11195 11.0406 9.1682 10.9925 9.20339 10.9318C9.26922 10.821 9.28775 10.6578 9.28775 10.444V8.45678C9.25388 7.97487 9.09603 7.70327 8.94265 7.51063C8.91159 7.47209 8.87962 7.43418 8.84679 7.39692L8.83848 7.3875C8.81122 7.35698 8.78522 7.32554 8.76051 7.29323C8.72905 7.25721 8.71012 7.21327 8.70619 7.16716C8.7112 7.12034 8.73543 7.07706 8.77393 7.04618C8.81242 7.01529 8.86226 6.99914 8.91325 7.00102H11.2107C11.3424 7.00102 11.3865 7.03048 11.4089 7.05817C11.4408 7.09646 11.4677 7.17599 11.4677 7.34331V10.0109C11.4677 10.3279 11.6261 10.5423 11.8562 10.5423C12.1208 10.5423 12.3119 10.3945 12.6455 10.0869L12.6512 10.081L12.6563 10.0757C13.4047 9.23462 14.0161 8.29747 14.4713 7.29382L14.4739 7.28675C14.5081 7.19808 14.5728 7.12216 14.6582 7.07057C14.7436 7.01898 14.845 6.99455 14.9468 7.00102H16.4167C16.6161 7.00102 16.6813 7.04815 16.703 7.07584C16.7254 7.1053 16.7413 7.16834 16.703 7.29206C16.1781 8.37393 15.5291 9.40094 14.7672 10.3556L14.7621 10.3627C14.6886 10.4669 14.6075 10.5824 14.596 10.7144C14.5832 10.8569 14.6496 10.986 14.7666 11.125C14.8516 11.2405 15.0273 11.3989 15.2056 11.5598L15.2223 11.5751C15.4089 11.7436 15.6115 11.9262 15.7738 12.103L15.7783 12.1071L15.7827 12.1118C16.2668 12.5569 16.6693 13.0714 16.9746 13.6353C17.0232 13.7885 16.9938 13.8674 16.9554 13.9081C16.9113 13.9552 16.8123 13.9994 16.6244 13.9994H15.166C15.0666 14.0016 14.9683 13.9803 14.8803 13.9376C14.7726 13.8798 14.6748 13.8075 14.5902 13.7231C14.4988 13.6389 14.3998 13.5369 14.2783 13.4126L14.1837 13.316Z" fill="white"/>
+                                </svg>                                                                                                                                                                                                                                    
+                        </span>
+                        <span class="main-txt-footer"><a id="navigation-footer" href="">Вконтакте</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-footer-description">
+                <span class="footer-description-txt">© «Flow Story», 2024. Все права защищены.<br class="br2">Предложения не являются публичной офертой. </span>
+            </div>
+    </div>
+    <script src="flowers.js"></script>
+    <script>
+        let inputs = document.querySelectorAll('.input__file');
+        Array.prototype.forEach.call(inputs, function (input) {
+          let label = input.nextElementSibling,
+            labelVal = label.querySelector('.input__file-button-text').innerText;
+      
+          input.addEventListener('change', function (e) {
+            let countFiles = '';
+            if (this.files && this.files.length >= 1)
+              countFiles = this.files.length;
+      
+            if (countFiles)
+              label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+            else
+              label.querySelector('.input__file-button-text').innerText = labelVal;
+          });
+        });
+    </script>
+    <script>
+        // медиа навигация
+    let mobileNavigation = document.getElementById('for-media-navigation');
+    let OpenMenuButton = document.getElementById('open-navigation-btn');
+    let ContentMobileNavigation = document.querySelector('.mobile-function-navigation');
+    let CloseMenuButton = document.getElementById('close-navigation-btn');
+    let detectOpensMenu = 0;
+    function OpenMenu(){
+      detectOpensMenu++;
+      if (detectOpensMenu % 2 == 1){
+        OpenMenuButton.style.display = 'none';
+        CloseMenuButton.style.display = 'flex';
+        setTimeout(latensyShowMenu, 200);
+        mobileNavigation.style.display = 'block';
+      }
+      //console.log(detectOpensMenu);
+    };
+    function CloseMenu(){
+      detectOpensMenu++;
+      if (detectOpensMenu % 2 == 0){
+        CloseMenuButton.style.display = 'none';
+        OpenMenuButton.style.display = 'flex';
+        mobileNavigation.style.display = 'none';
+        mobileNavigation.style.opacity = '0';
+        mobileNavigation.style.height = '0px';
+        ContentMobileNavigation.style.opacity = '0';
+      }
+      //console.log(detectOpensMenu);
+    }
+    let latensyShowMenu = function(){
+      mobileNavigation.style.opacity = '1';
+      mobileNavigation.style.height = '144px';
+      ContentMobileNavigation.style.opacity = '1';
+    }
+    OpenMenuButton.addEventListener('click', OpenMenu);
+    CloseMenuButton.addEventListener('click', CloseMenu);
+    </script>
+    <script>
+        "use string";
+//ниже отображение корзины
+let CountFlowersBasket = document.querySelectorAll('#addtobasket');
+let BasketElipses = document.querySelectorAll('.countElipse');
+let totalCountFLowers = 0; //Общий счетчик позиций ОДНОЙ категории в каталоге
+let arrAddFlowersToBasket = {};
+let j;
+let kk;
+let reduceToBaskets = document.querySelectorAll('#reducetobasket');
+let reduceGood = function(){
+    if (kk > 1){
+        kk--;
+        //console.log(kk);
+        this.closest('div').children[1].children[1].children[0].children[0].textContent = kk;
+        localStorage.setItem('count', kk);
+        save(localStorage.getItem('price'), localStorage.getItem('name'), localStorage.getItem('count'), localStorage.getItem('price') * localStorage.getItem('count'), localStorage.getItem('src'));
+        /*for (let UpdGood = 0; UpdGood < JSON.parse(localStorage.getItem('userchooise')).length; UpdGood++){
+
+        }*/
+    }
+
+}
+for (let reduceToBasket of reduceToBaskets){
+    reduceToBasket.addEventListener('click', reduceGood);
+}
+let addToBasket = function(){
+    //contains(mem, JSON.parse(localStorage.getItem('user${index}')).name);
+        kk = this.children[0].children[0].textContent;
+        this.closest('div').children[1].children[0].style.display = 'flex';
+        j = kk;
+        if (((this.closest('div')).closest('.wrapper-one-flower')).children[1].textContent == localStorage.getItem('name')){
+            kk++;
+        } else {
+            kk = 0;
+        }
+        j++;
+        this.children[0].style.display = 'flex';
+        //console.log( this.children[0]);
+        localStorage.setItem('price', ((this.closest('div').children[0].textContent).replace(/\s+/g, '')).replace('₽',''));
+        localStorage.setItem('name', ((this.closest('div')).closest('.wrapper-one-flower')).children[1].textContent);
+        localStorage.setItem('count', j);
+        localStorage.setItem('src', ((this.closest('div')).closest('.wrapper-one-flower')).children[0].children[0].src || ((this.closest('div')).closest('.wrapper-one-flower')).children[0].children[1].src);
+        //console.log('src', ((this.closest('div')).closest('.wrapper-one-flower')).children[0].children[0].src || ((this.closest('div')).closest('.wrapper-one-flower')).children[0].children[1].src);
+        save(localStorage.getItem('price'), localStorage.getItem('name'), localStorage.getItem('count'), localStorage.getItem('price') * localStorage.getItem('count'), localStorage.getItem('src'));
+        this.children[0].children[0].textContent = localStorage.getItem('count');
+        mem.push(JSON.parse(localStorage.getItem('user${index}')).name);
+        //console.log(mem);
+        //console.log(((this.closest('div').children[0].textContent).replace(/\s+/g, '')).replace('₽','')); //цена выбранного цветка;
+        //console.log(((this.closest('div')).closest('.wrapper-one-flower')).children[1].textContent); // Название товара
+        //console.log(((this.closest('div')).closest('.wrapper-one-flower')).children[0].children[0].src);
+
+}
+for (let CountFlowerBasket = 0; CountFlowerBasket < CountFlowersBasket.length; CountFlowerBasket++){
+    totalCountFLowers++;
+    CountFlowersBasket[CountFlowerBasket].addEventListener('click', addToBasket);
+}                                                                          
+let mem = [];
+let lastuserIndex = [];
+let index = JSON.parse(localStorage.getItem('userIndex')) || 0;
+const save = (price, name, count, totalPrise, src) => {
+    localStorage.setItem('user${index}', JSON.stringify({ price, name, count, totalPrise, src}));
+    //let index = JSON.parse(localStorage.getItem('userIndex')) || 1;
+    //mem.includes(JSON.parse(localStorage.getItem('user${index}')).name);
+    if (mem.includes(JSON.parse(localStorage.getItem('user${index}')).name)){
+        index = JSON.parse(localStorage.getItem('userIndex')) || 0;
+        localStorage.setItem('userIndex', index);
+        localStorage.setItem('user${index}', JSON.stringify({ price, name, count, totalPrise, src}));
+        lastuserIndex[lastuserIndex.length-1] = JSON.parse(localStorage.getItem('user${index}'));
+    } else if (mem.includes(JSON.parse(localStorage.getItem('user${index}')).name) != true){
+        index = JSON.parse(localStorage.getItem('userIndex')) || 0;
+        localStorage.setItem('userIndex', index + 1);
+
+        lastuserIndex.push(JSON.parse(localStorage.getItem('user${index}')));// при добавлении уникального нового товара в корзину
+
+        localStorage.setItem('user${index}', JSON.stringify({ price, name, count, totalPrise, src}));
+    }
+    //console.log(lastuserIndex);
+    //localStorage.setItem('userIndex', index + 1);
+    //localStorage.setItem('user${index}', JSON.stringify({ price, name, count, totalPrise}));
+    //console.log(localStorage.getItem('user${index}'));
+    //console.log(JSON.parse(localStorage.getItem('user${index}')));
+    //console.log(index, 'index');
+    //console.log(localStorage.getItem('user${index}'));
+    localStorage.setItem('userchooise', JSON.stringify(lastuserIndex));
+    //console.log(JSON.parse(localStorage.getItem('userchooise')), 'parsim');
+};
+//console.log(JSON.parse(localStorage.getItem('userchooise')), 'parsim');
+
+// обновление добавление кнопки reducetobasket;
+
+function showAllCount(){ //запарная штука для отображения количества выбранных букетов при их добавлении на сайт
+    let goods = document.querySelector('.slider-Carousel-track')
+    for (let  good of goods.children){ // находим каждый товар и сравниваем его название с тем, что у нас уже хранится в локалсторейдже
+        for (let everygood of good.children){
+            console.log(everygood.children[2].children[1].children[1].children[0].textContent);
+            //console.log(everygood.children[2].children[1].children[1]);
+            //console.log(everygood.children[2].children[1].children[1].children[0].children[0].textContent);
+            //console.log(everygood.children[1]);
+            for (let parsim of JSON.parse(localStorage.getItem('userchooise'))){
+               if (parsim.name.includes(everygood.children[1].textContent)){ //если они совпадают, то находим где отображается количество товара и отображаем его, выводя нужное количество взятое с локалсторейдж
+                everygood.children[2].children[1].children[1].style.display = 'flex';
+                everygood.children[2].children[1].children[0].children[0].style.display = 'flex';
+                everygood.children[2].children[1].children[1].children[0].children[0].textContent = parsim.count;
+               };
+            }
+        }
+    }
+}
+showAllCount();
+    </script>
+</body>
