@@ -9,7 +9,11 @@
 - **JavaScript**: Логика приложения и взаимодействие с localStorage.
 
 ### Screenshots
+#
 ![Скриншот index.html PC](mainPagePC.png)
+#
 ![Скриншот index.html mobile (420px)](mainPageMobile.png)
+#
 ![Скриншот basket.html PC](basketPagePC.png)
+#
 ![Скриншот basket.html Mobile](basketPageMobile.png)
